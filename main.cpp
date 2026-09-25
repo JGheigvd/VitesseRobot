@@ -8,7 +8,7 @@ int main() {
     double L1;
     std::cout << "Entrez la valeur de la distance parcouru sur la route : ";
     std::cin >> L1;
-    while (L1 > longueur) {
+    while (L1 > longueur or L1 < 0) {
         std::cout <<"Veuillez entrer une valeur admissible pour la distance parcouru sur la route : ";
         std::cin >> L1;
     }
