@@ -1,11 +1,17 @@
 #include <iostream>
-#include <cmath> // librairie pour utiliser la racine carré
+#include <cmath>
 
 int main() {
-// on définit les valeurs connus
-    double const b = 3; 
-    double const L1 = 10;
-    double const L2 = 6;
+    // on demande a l'utilisateur les valeurs de bases
+    double b;
+    std::cout << "Entrez la valeur du cote oppose du triangle : ";
+    std::cin >> b;
+    double L1;
+    std::cout << "Entrez la valeur de la longueur totale : ";
+    std::cin >> L1;
+    double L2;
+    std::cout << "Entrez la valeur de la distance parcouru sur la route : ";
+    std::cin >> L2;
 
     double a = L1-L2; // on trouve le coté inconnu du triangle
     double L3 = std::sqrt((a*a)+(b*b)); //on trouve l'hypothénuse
