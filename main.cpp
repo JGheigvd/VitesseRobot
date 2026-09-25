@@ -8,7 +8,7 @@ int main() {
     double const L2 = 6;
 
     double a = L1-L2;
-    double L3t = (a*a)*(b*b);
+    double L3t = (a*a)+(b*b);
     double L3 = std::sqrt(L3t);
 
     double T1 = L2/5;
