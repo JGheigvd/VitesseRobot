@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> // librairie pour utiliser la racine carré
 
 int main() {
 // on définit les valeurs connus
