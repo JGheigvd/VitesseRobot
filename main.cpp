@@ -3,20 +3,20 @@
 
 int main() {
     // on demande a l'utilisateur les valeurs de bases
-    double b;
-    std::cout << "Entrez la valeur du cote oppose du triangle : ";
-    std::cin >> b;
+    double const b = 3;
+    double const longueur = 10;
     double L1;
-    std::cout << "Entrez la valeur de la longueur totale : ";
-    std::cin >> L1;
-    double L2;
     std::cout << "Entrez la valeur de la distance parcouru sur la route : ";
-    std::cin >> L2;
+    std::cin >> L1;
+    while (L1 > longueur) {
+        std::cout <<"Veuillez entrer une valeur admissible pour la distance parcouru sur la route : ";
+        std::cin >> L1;
+    }
 
-    double a = L1-L2; // on trouve le coté inconnu du triangle
+    double a = longueur-L1; // on trouve le coté inconnu du triangle
     double L3 = std::sqrt((a*a)+(b*b)); //on trouve l'hypothénuse
 
-    double T1 = L2/5; // on trouve le temps de la partie route
+    double T1 = L1/5; // on trouve le temps de la partie route
     double T2 = L3/2; // on trouve le temps de la partie rocheuse
 
     double Ttot = T1 + T2; // on additione les deux temps
